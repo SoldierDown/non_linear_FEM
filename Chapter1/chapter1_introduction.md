@@ -27,4 +27,6 @@
 - wave propagation: $\frac{\partial^2 \psi}{\partial t^2}=c^2\nabla^2\psi$
 ### 1.4.2 Parabolic
 - heat conduction: $\vec{q}=-k\nabla u$
-### 1.4.3 Elliptic e.g. elasticity and Laplace equations
+### 1.4.3 Elliptic
+- Laplace's equations: $\nabla^2 \phi=0$ 
+- elasticity 
