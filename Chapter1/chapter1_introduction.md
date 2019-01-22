@@ -13,7 +13,7 @@
 
 ## 1.3 Mesh Descriptions
 ### 1.3.1 Some Concepts
-- Node: a coordinate location in space where the degrees of freedom(*DoFs*) are defined. The results of FEM(deflections, stresses, etc.) are given at the nodes.
+- **Node**: a coordinate location in space where the degrees of freedom(*DoFs*) are defined. The results of FEM(deflections, stresses, etc.) are given at the nodes.
 - Element: the basic building block of FEM. e.g., lines, areas, solids.
 ### 1.3.2 Lagrangian(material) description
 - The nodes are coincident with material points.
