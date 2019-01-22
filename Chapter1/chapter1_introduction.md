@@ -23,6 +23,7 @@
 - Boundary nodes remain on the boundary in Lagrangian meshes(simplifies the imposition of boundary conditions). In Eulerian meshs, boundary conditions must be imposed at points which are not nodes(complicated).
 - Elements in Lagrangian meshes can become severely**distorted**, and element accuracy degrades with distortion, which results in that the magnitude of deformation has to be limited. 
 ## 1.4 Classification of PDEs
-### 1.4.1 Hyperbolic
-### 1.4.2 Parabolic
-### 1.4.3 Elliptic
+### 1.4.1 Hyperbolic e.g. wave propagation
+### 1.4.2 Parabolic e.g. diffusion problems such as heat conduction
+$\vec{q}=-k\nabla u$
+### 1.4.3 Elliptic e.g. elasticity and Laplace equations
