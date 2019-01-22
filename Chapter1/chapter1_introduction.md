@@ -24,6 +24,7 @@
 - Elements in Lagrangian meshes can become severely**distorted**, and element accuracy degrades with distortion, which results in that the magnitude of deformation has to be limited. 
 ## 1.4 Classification of PDEs
 ### 1.4.1 Hyperbolic e.g. wave propagation
-### 1.4.2 Parabolic e.g. diffusion problems such as heat conduction
-$\vec{q}=-k\nabla u$
+- wave propagation: $\frac{\partial^2 \psi}{\partial t^2}=c^2\nabla^2\psi$
+### 1.4.2 Parabolic
+- heat conduction: $\vec{q}=-k\nabla u$
 ### 1.4.3 Elliptic e.g. elasticity and Laplace equations
