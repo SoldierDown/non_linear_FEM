@@ -16,7 +16,7 @@
 - **Node**: a coordinate location in space where the degrees of freedom(*DoFs*) are defined. The results of FEM(deflections, stresses, etc.) are given at the nodes.
 - **Element**: the basic building block of FEM. e.g., lines, areas, solids.
 ### 1.3.2 Lagrangian(material) description
-- The nodes are coincident with**material points**.
+- The nodes are coincident with **material points**.
 ### 1.3.3 Eulerian(spatial) description
 - The nodes are **fixed** in space.
 ### 1.3.4 Pros and Cons
