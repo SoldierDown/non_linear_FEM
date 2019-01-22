@@ -21,7 +21,7 @@
 - The nodes are **fixed** in space.
 ### 1.3.4 Pros and Cons
 - Boundary nodes remain on the boundary in Lagrangian meshes(simplifies the imposition of boundary conditions). In Eulerian meshs, boundary conditions must be imposed at points which are not nodes(complicated).
-- Elements in Lagrangian meshes can become severely**distorted**, and element accuracy degrades with distortion, which results in that the magnitude of deformation has to be limited. 
+- Elements in Lagrangian meshes can become severely **distorted**, and element accuracy degrades with distortion, which results in that the magnitude of deformation has to be limited. 
 ## 1.4 Classification of PDEs
 ### 1.4.1 Hyperbolic e.g. wave propagation
 - wave propagation: $\frac{\partial^2 \psi}{\partial t^2}=c^2\nabla^2\psi$
