@@ -11,12 +11,12 @@ u_s &= u_x x_s + u_y y_s \\\\
 v_s &= v_x x_s + v_y y_s
 \end{aligned}
 Writing (1)-(2) as a single matrix equation gives
-\begin{bmatrix}
+\begin{matrix}
     1 & 0 & 0 & -\alpha \\\\
     0 & 0 & 1 & 0 \\\\
     x_s & y_s & 0 & 0 \\\\
     0 & 0 & x_s & y_s
-\end{bmatrix}
+\end{matrix}
 =
 \begin{bmatrix}
     x_{11} & x_{12} & x_{13} & \dots  & x_{1n} \\
