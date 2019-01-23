@@ -35,3 +35,4 @@ Set $\det (A) = 0$, which yields
 \begin{aligned}
 y^2_s = 0
 \end{aligned}
+In this case, $a = 1, b = c = 0$, so $ b^2 -ac = 0 \rightarrow parabolic$
