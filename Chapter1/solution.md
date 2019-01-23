@@ -2,7 +2,7 @@
 ## 1.1.
 let 
 \begin{aligned}
-u_x = \alpha v_t \\
+u_x = \alpha v_t \\\\
 u = v_x
 \end{aligned} 
 along with the following derivatives:  
