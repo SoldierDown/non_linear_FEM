@@ -1,10 +1,10 @@
 # Solution
 ## 1.1.  
 Let 
-\begin{aligned}
+\begin{equation}
 u_x &= \alpha v_t \\\\
 u &= v_x
-\end{aligned} 
+\end{equation} 
 along with the following derivatives
 \begin{aligned}
 u_s &= u_x x_s + u_y y_s \\\\
