@@ -1,5 +1,5 @@
 # Solution
-## 1.1.
+## 1.1.  
 let 
 \begin{aligned}
 u_x &= \alpha v_t \\\\
@@ -17,10 +17,16 @@ Writing (1)-(2) as a single matrix equation gives
     x_s & y_s & 0 & 0 \\\\
     0 & 0 & x_s & y_s
 \end{matrix}
+\begin{matrix}
+0  \\\\
+-u \\\\
+u_s \\\\
+v_s \\\\
+\end{matrix}
 =
-\begin{bmatrix}
-    x_{11} & x_{12} & x_{13} & \dots  & x_{1n} \\
-    x_{21} & x_{22} & x_{23} & \dots  & x_{2n} \\
-    \vdots & \vdots & \vdots & \ddots & \vdots \\
-    x_{d1} & x_{d2} & x_{d3} & \dots  & x_{dn}
-\end{bmatrix}
+\begin{matrix}
+E_1 \\\\
+E_2 \\\\
+u_s \\\\
+v_s \\\\
+\end{matrix}
