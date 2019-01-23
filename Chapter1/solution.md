@@ -10,7 +10,7 @@ along with the following derivatives
 u_s &= u_x x_s + u_y y_s \\\\
 v_s &= v_x x_s + v_y y_s
 \end{aligned}
-Writing (1)-(2) as a single matrix equation gives
+Writing equations above as a single matrix equation gives
 \begin{gather}
 \begin{bmatrix}
     1 & 0 & 0 & -\alpha \\\\
@@ -31,3 +31,7 @@ u_s \\\\
 v_s \\\\
 \end{bmatrix}
 \end{gather}
+Set $\det (A) = 0$, which yields 
+\begin{aligned}
+y^2_s = 0
+\end{aligned}
