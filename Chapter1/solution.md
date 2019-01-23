@@ -2,7 +2,8 @@
 ## 1.1.
 let 
 \begin{equation}
-u_x = \alpha v_t\\ u = v_x
+u_x = \alpha v_t\par
+u = v_x
 \end{equation}, 
 along with the following derivatives:  
 \begin{equation}
