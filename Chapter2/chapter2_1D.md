@@ -15,15 +15,22 @@ Besides, different **stress** and **deformation** measures are used.
 - Conservation of mass  
   $\rho J = \rho_0 J_0, J = \frac{\partial x}{\partial X}\frac{A}{A_0}$  
   $\Rightarrow \rho FA = \rho_0A_0$
-- Conservation of momentum
-  $(A_0P)_X+\rho_0A_0b=\rho_0A_0\ddot{u}$  
-  if cross-sectional area is constant in space:
+- Conservation of momentum  
+
+  - $(A_0P)_X+\rho_0A_0b=\rho_0A_0\ddot{u}$  
+  if cross-sectional area is constant in space:  
   $(A_0P)_X=A_0P_X\Rightarrow P_X+\rho_0b=\rho_0\ddot{u}$
-  
-- ~~Conservation of energy~~
+  - Equilibrium equation:
+  $\ddot{u}=0\Rightarrow(A_0P)_X+\rho_0A_0b=0$
+- ~~Conservation of energy~~: need not be considered if there's no heat or energy transfer.    
+  $\rho_0\dot{\omega}_int=\dot{F}P$
 - Measure of deformation: strain-displacement equation
-- Constitutive equation  
-  
+  - displacement: $u(X,t)=\phi(X,t)-X=x-X$  
+  - deformation gradient: $F=\frac{\partial\phi}{\partial X}=\frac{\partial x}{\partial X}$  
+  - strain: $\varepsilon(X,t)=F(X,t)-1=\frac{\partial x}{\partial X}-1=\frac{\partial u}{\partial X}$
+- Constitutive equations
+  - totol form: $P(X,t)=S^{PF}(F(X,\overline{t}), \dot{F}(X,\overline{t}), etc., \overline{t}<t)$  
+  - rate form: $\dot{P}(X,t)=S^{PF}_t(\dot{F}(X.overline{t}), F(X,\overline{t}), P(X,\overline{t}), etc., \overline{t}\leq t)$  
 Besides, we require the deformation to be continuous: compatibility requirement.
 
 ## 1.2 Notation
