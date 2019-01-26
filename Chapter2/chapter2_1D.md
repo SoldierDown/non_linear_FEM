@@ -16,7 +16,10 @@ Besides, different **stress** and **deformation** measures are used.
   $\rho J = \rho_0 J_0, J = \frac{\partial x}{\partial X}\frac{A}{A_0}$  
   $\Rightarrow \rho FA = \rho_0A_0$
 - Conservation of momentum
-  $\left\{\right\}$
+  $(A_0P)_X+\rho_0A_0b=\rho_0A_0\ddot{u}$  
+  if cross-sectional area is constant in space:
+  $(A_0P)_X=A_0P_X\Rightarrow P_X+\rho_0b=\rho_0\ddot{u}$
+  
 - ~~Conservation of energy~~
 - Measure of deformation: strain-displacement equation
 - Constitutive equation  
