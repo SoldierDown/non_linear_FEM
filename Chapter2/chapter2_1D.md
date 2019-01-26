@@ -40,5 +40,5 @@ Besides, different **stress** and **deformation** measures are used.
   
 Besides, we require the deformation to be continuous: compatibility requirement.
 
-**Some Concepts**  
+## **Some Concepts**  
 - semi-discretization: discretization **only** in space
