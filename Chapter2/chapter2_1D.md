@@ -14,17 +14,9 @@ Besides, different **stress** and **deformation** measures are used.
 ### 2.2.1 Governing Equations
 - Conservation of mass  
   $\rho J = \rho_0 J_0, J = \frac{\partial x}{\partial X}\frac{A}{A_0}$  
-  $\Rightarrow \rho FA = \rho_0A_0 $
-  \begin{equation}  
-  \left\{  
-  \begin{array}{**rcl**}
-    IF_{k}(\hat{t}_{k,m})=IF_{m}(\hat{t}_{k,m}), & \\
-    IF_{k}(\hat{t}_{k,m}) \pm h= IF_{m}(\hat{t}_{k,m}) \pm h  , &\\
-    \left |IF'_{k}(\hat{t}_{k,m} - IF'_{m}(\hat{t}_{k,m} \right |\geq d , &   
-  \end{array}
-  \right.  
-  \end{equation} 
+  $\Rightarrow \rho FA = \rho_0A_0$
 - Conservation of momentum
+  $\left{$
 - ~~Conservation of energy~~
 - Measure of deformation: strain-displacement equation
 - Constitutive equation  
