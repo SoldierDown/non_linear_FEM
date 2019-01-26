@@ -1,14 +1,26 @@
 # Chapter 2.  Lagrangian and Eulerian Finite Elements in One Dimension
-## 1.1 Introduction:
-### Two Approach in development of Lagrangian finite elements
-- ***total Lagrangian formulations***
-  - with respect to the Lagrangian(material) coordinates $X$
-  - variables are described in the **original** configuration 
-- ***updated Lagrangian formulations***
-  - with respect to the Eulerian(spatial) coordinates $x$
-  - variables are described in the **current** configuration  
-
+## 2.1 Introduction
+### 2.1.1 Two Approach in development of Lagrangian finite elements  
+- ***total Lagrangian formulation***  
+  - with respect to the **Lagrangian**(material) coordinates $X$.  
+  - variables are described in the **original** configuration.  
+  - used much in solid mechanics.  
+- ***updated Lagrangian formulation***
+  - with respect to the **Eulerian**(spatial) coordinates $x$.
+  - variables are described in the **current** configuration.  
+  - can be used in solid mechanics where very large deformations are encountered.  
 Besides, different **stress** and **deformation** measures are used.
+## 2.2 Total Lagrangian Formulation
+### 2.2.1 Governing Equations
+- Conservation of mass
+  $\rho J = \rho_0 J_0$
+- Conservation of momentum
+- ~~Conservation of energy~~
+- Measure of deformation: strain-displacement equation
+- Constitutive equation  
+  
+Besides, we require the deformation to be continuous: compatibility requirement.
+
 ## 1.2 Notation
 - indicial notation 
 - tensor notation
@@ -33,3 +45,9 @@ Besides, different **stress** and **deformation** measures are used.
 ### 1.4.3 Elliptic
 - Laplace's equations: $\nabla^2 \phi=0$ 
 - elasticity 
+
+
+
+
+**Some Concepts**  
+- semi-discretization: discretization **only** in space
