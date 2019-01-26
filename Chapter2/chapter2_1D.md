@@ -1,8 +1,8 @@
 # Chapter 2.  Lagrangian and Eulerian Finite Elements in One Dimension
 ## 1.1 Introduction:
 ### Two Approach in development of Lagrangian finite elements
-- *total Lagrangian formulations*, with respect to the Lagrangian(material) coordinates $X$
-- *updated Lagrangian formulations*, with respect to the Eulerian(spatial) coordinates $x$
+- ***total Lagrangian formulations***, with respect to the Lagrangian(material) coordinates $X$
+- ***updated Lagrangian formulations***, with respect to the Eulerian(spatial) coordinates $x$
 
 ## 1.2 Notation
 - indicial notation 
