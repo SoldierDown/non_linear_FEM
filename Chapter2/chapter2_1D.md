@@ -16,7 +16,7 @@ Besides, different **stress** and **deformation** measures are used.
   $\rho J = \rho_0 J_0, J = \frac{\partial x}{\partial X}\frac{A}{A_0}$  
   $\Rightarrow \rho FA = \rho_0A_0$
 - Conservation of momentum
-  $\left\{$
+  $\left\{\right\}$
 - ~~Conservation of energy~~
 - Measure of deformation: strain-displacement equation
 - Constitutive equation  
