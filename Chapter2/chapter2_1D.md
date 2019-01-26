@@ -6,7 +6,8 @@
   - variables are described in the **original** configuration 
 - ***updated Lagrangian formulations***
   - with respect to the Eulerian(spatial) coordinates $x$
-  - variables are described in the **current** configuration
+  - variables are described in the **current** configuration  
+
 Besides, different **stress** and **deformation** measures are used.
 ## 1.2 Notation
 - indicial notation 
