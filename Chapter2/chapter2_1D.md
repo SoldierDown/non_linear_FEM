@@ -13,8 +13,8 @@ Besides, different **stress** and **deformation** measures are used.
 ## 2.2 Total Lagrangian Formulation
 ### 2.2.1 Governing Equations
 - Conservation of mass  
-  $\rho J = \rho_0 J_0, J_0 = 1$  
-  $\rightArrow \rho FA = \rho_0A_0 $
+  $\rho J = \rho_0 J_0, J = \frac{\partial x}{\partial X}\frac{A}{A_0}$  
+  $\Rightarrow \rho FA = \rho_0A_0 $
 - Conservation of momentum
 - ~~Conservation of energy~~
 - Measure of deformation: strain-displacement equation
