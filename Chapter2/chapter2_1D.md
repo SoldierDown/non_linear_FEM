@@ -53,7 +53,7 @@ Besides, we require the deformation to be continuous: compatibility requirement.
 ### Interior Continuity Conditions(jump conditions)
 - $\[\[A_0P\]\]=0$
 - $\[\[f(X)\]\]=f(X+\varepsilon)-f(X-\varepsilon)$, $\varepsilon\rightarrow 0$  
-**NOTE**: in calculus, if $f(x)\in C^{-1}$: 	$\int_{a}^{b} f_x(x)\, dx=\sum_{i}^k\int_{x_{i-1}}^{x_i} f_x(x)\, dx=f(b)-f(a)-\sum_i^{k-1}\[\[f(x_i)\]\]$
+**NOTE**: in calculus, if $f(x)\in C^{-1}$: 	$\int_{a}^{b} f_x(x)\ dx=\sum_{i}^k\int_{x_{i-1}}^{x_i} f_x(x)\ dx=f(b)-f(a)-\sum_i^{k-1}\[\[f(x_i)\]\]$
   
 
   
