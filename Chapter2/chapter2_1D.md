@@ -38,7 +38,11 @@ Besides, different **stress** and **deformation** measures are used.
     - Linear viscoelastic material  
       $P(X,t)=E^{PF}[(F(X,t)-1)+\alpha\dot{F}(X,t)]=E^{PF}(\varepsilon+{\alpha}\dot{\varepsilon})$  
   
-Besides, we require the deformation to be continuous: compatibility requirement.
+Besides, we require the deformation to be continuous: compatibility requirement.  
+### 2.2.2 Boundary Conditions  
+- displacement boundary  
+  $u = \overline{u} on \Tau_u$
+- traction boundary
 
 ## **Some Concepts**  
 - semi-discretization: discretization **only** in space
