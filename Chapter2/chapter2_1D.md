@@ -46,6 +46,16 @@ Besides, we require the deformation to be continuous: compatibility requirement.
   $n^0P=\overline{t_x}^0$ on $\Gamma_t$  
 **NOTE**: the traction and displacement cannot be prescribed at the same point! See [explanation](./boundary_condition.pdf).  
 ### 2.2.3 Initial Conditions(t)
-- $u(X,0)=u_0(X)$ for $X\in\[X_a,X_b\]$
+- $u(X,0)=u_0(X)$ for $X\in\[X_a,X_b\]$  
+  $\dot{u}(X,0)=\nu_0(X)$ for $X\in\[X_a,X_b\]$  
+- or if undeformed initially:
+  $u(X,0)=0$, $\dot{u}(X,0)=0$
+### Interior Continuity Conditions(jump conditions)
+- $\[\[A_0P\]\]=0$
+- $\[\[f(X)\]\]=f(X+\varepsilong)-f(X-\varepsilon)$, &\epsilon\rightarrow 0&  
+**NOTE**: in calculus, if $f(x)\in C^{-1}$: 	$\int_{a}^{b} f_x(x)\, dx=\sum_{i}^k\int_{x_{i-1}^{x_i} f_x(x)\, dx=f(b)-f(a)-\sum_i^{k-1}\[\[\f(x_i)]\]}$
+  
+
+  
 ## **Some Concepts**  
 - semi-discretization: discretization **only** in space
