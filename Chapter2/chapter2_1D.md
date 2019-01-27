@@ -41,9 +41,9 @@ Besides, different **stress** and **deformation** measures are used.
 Besides, we require the deformation to be continuous: compatibility requirement.  
 ### 2.2.2 Boundary Conditions  
 - displacement boundary  
-  $u = \overline{u} on \Gamma_u$  
+  $u = \overline{u}$ on $\Gamma_u$  
 - traction boundary  
-  $n^0P=\overline{t_x}^0 on \Gamma_t$
-
+  $n^0P=\overline{t_x}^0$ on $\Gamma_t$
+**NOTE**: the traction and displacement cannot be prescribed at the same point! See [explanation](./boundary_condition.pdf).  
 ## **Some Concepts**  
 - semi-discretization: discretization **only** in space
