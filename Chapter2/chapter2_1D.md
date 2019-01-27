@@ -52,8 +52,8 @@ Besides, we require the deformation to be continuous: compatibility requirement.
   $u(X,0)=0$, $\dot{u}(X,0)=0$
 ### Interior Continuity Conditions(jump conditions)
 - $\[\[A_0P\]\]=0$
-- $\[\[f(X)\]\]=f(X+\varepsilong)-f(X-\varepsilon)$, &\epsilon\rightarrow 0&  
-**NOTE**: in calculus, if $f(x)\in C^{-1}$: 	$\int_{a}^{b} f_x(x)\, dx=\sum_{i}^k\int_{x_{i-1}^{x_i} f_x(x)\, dx=f(b)-f(a)-\sum_i^{k-1}\[\[\f(x_i)]\]}$
+- $\[\[f(X)\]\]=f(X+\varepsilong)-f(X-\varepsilon)$, &\varepsilon\rightarrow 0&  
+**NOTE**: in calculus, if $f(x)\in C^{-1}$: 	$\int_{a}^{b} f_x(x)\, dx=\sum_{i}^k\int_{x_{i-1}^{x_i} f_x(x)\, dx=f(b)-f(a)-\sum_i^{k-1}\[\[f(x_i)\]\]}$
   
 
   
