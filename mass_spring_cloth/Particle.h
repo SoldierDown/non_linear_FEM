@@ -12,8 +12,8 @@ public:
     ~Particle();
     bool isStatic;
     double mass;
-    double dt = 0.01;
-    double damping = 0.01;
+    double time_step = 1.0;
+    double damping = 0.99;
     glm::vec3 pos_cur;
     glm::vec3 pos_last;
     glm::vec3 v;
@@ -56,15 +56,11 @@ void Particle::Update()
     }
     else
     {
-    //std::cout<<"HERE"<<std::endl;
-    force -= glm::vec3(damping * v[0], damping * v[1], damping * v[2]);
-    glm::vec3 a = glm::vec3(force[0]/mass, force[1]/mass, force[2]/mass);
-    v += glm::vec3(dt*a[0], dt*a[1], dt*a[2]);
-    pos_cur += glm::vec3(dt*v[0],dt*v[1],dt*v[2]);
-    //std::cout<<pos_cur[0]<<", "<<pos_cur[1]<<", "<<pos_cur[2]<<std::endl;
-    pos_cur += glm::vec3((1.0-damping)*(pos_cur[0]-pos_last[0]), (1.0-damping)*(pos_cur[1]-pos_last[1]), (1.0-damping)*(pos_cur[2]-pos_last[2]))   
-                        + glm::vec3(dt * a[0], dt * a[1], dt * a[2]);
-    force = glm::vec3(0.0, 0.0, 0.0);
+	    glm::vec3 temp = pos_cur;
+	    pos_cur += (glm::vec3((pos_cur[0] - pos_last[0]) * damping, (pos_cur[0] - pos_last[0]) * damping, (pos_cur[0] - pos_last[0]) * damping) 
+                    + glm::vec3((force[0]/mass)*time_step, (force[1]/mass)*time_step, (force[2]/mass)*time_step));
+	    pos_last = temp;
+	    force = glm::vec3(0,0,0);
     }
 }
 

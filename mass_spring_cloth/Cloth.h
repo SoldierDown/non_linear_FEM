@@ -5,9 +5,9 @@
 #include "Spring.h"
 #include <vector>
 #include<iostream>
-#define STRUCTURAL 1000
-#define SHEAR    1000
-#define BENDING  1000
+#define STRUCTURAL 0.8
+#define SHEAR    0.8
+#define BENDING  0.8
 class Cloth
 {
 private:
@@ -15,13 +15,15 @@ private:
 public:
     Cloth(/* args */);
     ~Cloth();
+    double time_step = 10.0;
     int rows;
     int cols;
     double cell_width;
     std::vector<Particle> particles;
     std::vector<Triangle> triangles;
     std::vector<Spring> springs;
-    glm::vec3 gravity = glm::vec3(0.0, -0.5, 0.0);
+    glm::vec3 gravity = glm::vec3(0.0, -0.3, 0.0);
+    glm::vec3 wind = glm::vec3(0.0, 0.0, 0.0);
     void Init();
     void Update();
     void Visualize();
@@ -44,12 +46,12 @@ void Cloth::Init()
     {
         for(int j = 0; j < cols; j++)
         {
-            particles.push_back(Particle(glm::vec3(j * cell_width, 0.0, i * cell_width), 1.0));
+            particles.push_back(Particle(glm::vec3(j * cell_width, i * cell_width, 0.0),50));
         }
     }
 
 
-    std::cout<<"PARTICLES ALL SET"<<std::endl;
+    std::cout<<"PARTICLES ALL SET: "<<(rows - 1) * (cols - 1)<<std::endl;
 
     // set up triangles
 
@@ -57,11 +59,11 @@ void Cloth::Init()
     {
         for(int j = 1; j < cols; j++)
         {
-            triangles.push_back(Triangle((i - 1) * cols + j - 1, i * cols + j - 1, i * cols + j));
-            triangles.push_back(Triangle(i * cols + j, (i - 1) * cols + j, (i - 1) * cols + j - 1));
+            triangles.push_back(Triangle((i - 1) * cols + j - 1,i * cols + j, i * cols + j - 1));
+            triangles.push_back(Triangle(i * cols + j, (i - 1) * cols + j - 1, (i - 1) * cols + j));
         }
     }
-    std::cout<<"TRIANGLES ALL SET"<<std::endl;
+    std::cout<<"TRIANGLES ALL SET. SIZE: "<<triangles.size()<<std::endl;
 
     // set up mass-spring system
     for(int i = 0; i < rows; i++)
@@ -112,15 +114,15 @@ void Cloth::Init()
     
 
     std::cout<<"SPRINGS ALL SET"<<std::endl;
-
+    particles[rows * cols/2+cols/2].force[2] -= 50;
+    particles[rows * cols/2+cols/2 + 5].force[2] -= 50;
+    particles[rows * cols/2+cols/2 - 5].force[2] -= 50;
+    particles[rows * cols/2+cols/2 + 20].force[2] -= 50;
     // pin some vertices
-    for(int i = 0 ; i < cols; i++) 
-    {
-        if(i < cols/3 | i > 2 * cols /3)
-        particles[cols * rows -1 - i].SetStatic();
-    }
-    //particles[0].SetStatic();
-    //particles[cols - 1].SetStatic();
+    //for(int i = (rows - 1) * cols; i < rows * cols; i++) particles[i].SetStatic();
+    //for(int i = 0; i < rows; i++) particles[i * cols].SetStatic();
+    particles[rows * cols - 1].SetStatic();
+    particles[(rows - 1) * cols].SetStatic();
 
 
 
@@ -131,18 +133,27 @@ void Cloth::Init()
 
 void Cloth::Update()
 {
-    // apply spring forces
-    for(int i = 0; i < springs.size(); i++)
-    {
-        springs[i].Update();
-    }
-    // apply external forces
+    // add external forces
     for(int i = 0; i < particles.size(); i++)
     {
-        //if(i == particles.size()/2) particles[i].force += glm::vec3(-1, 0, 0);
-        particles[i].force += gravity;
+        particles[i].force += glm::vec3(time_step * gravity[0], time_step * gravity[1], time_step * gravity[2]);
+        //particles[i].force += glm::vec3(time_step * wind[0], time_step * wind[1], time_step * wind[2]);
+    }
+    // apply spring forces
+    for(int n = 0; n < 20; n++)
+    {
+        for(int i = 0; i < springs.size(); i++)
+        {
+            springs[i].Constraint();
+        }
+    }
+
+    for(int i = 0; i < particles.size(); i++)
+    {
         particles[i].Update();
     }
+    
+    
 }
 
 
